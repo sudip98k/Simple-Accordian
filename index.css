@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    color: rgb(25, 218, 218);
+}
+body{
+    background-color: beige;
+}
+.accordian{
+    width: 50%;
+    margin: 200px auto 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+.item{
+    box-shadow: 0 0 30px rgba(255,255,255,255);
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    gap: 30px;
+    align-items: center;
+    padding: 30px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+h2{
+    font-size: 24px;
+    text-transform: capitalize;
+}
+.number{
+    font-size: 28px;
+}
+.icon{
+    width: 24px;
+    height: 24px;
+    color: cadetblue;
+}
+.hidden-box{
+    grid-column: 2/3;
+    display: none;
+}
+.hidden-box p{
+    line-height: 1.6;
+    margin-bottom: 24px;
+    font-size: 15px;
+}
+.hidden-box ul li{
+    margin-left: 16px;
+    line-height: 1.4;
+    font-size: 15px;
+}
+.active .hidden-box{
+    display: block;
+}
